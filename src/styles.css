@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #d9d9d9;
+}
+* {
+  box-sizing: border-box;
+}
+.modal__system-alert {
+  width: auto;
+  max-width: 500px;
+  min-height: 79px;
+  height: auto;
+  box-shadow: 0 30px 54px rgba(41, 43, 47, 0.24);
+  border-radius: 2px 3px 3px 2px;
+  background-color: #ffffff;
+  right: 20px;
+  top: 20px;
+  left: unset;
+  padding: 15px 34px 15px 20px;
+  border-left: 3px solid transparent;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 16px;
+  align-items: flex-start;
+  align-content: center;
+  position: fixed;
+  z-index: 9;
+}
+
+.modal__system-alert .error-wrapper {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.modal__system-alert .error-wrapper div {
+  color: #181819;
+  font: 700 18px/18px SFProDisplay, sans-serif;
+}
+
+.modal__system-alert .error-wrapper span {
+  color: #181819;
+  font: 500 14px/16px SFProDisplay, sans-serif;
+}
+
+.modal__system-alert .mat-icon {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+}
+
+.modal__system-alert.error {
+  background-color: #ffffff;
+  border-color: #d14124;
+  color: #d14124;
+}
+
+.modal__system-alert.success {
+  background-color: #ffffff;
+  border-color: #78aa00;
+  color: #78aa00;
+}
+
+.modal__system-alert.warning {
+  background-color: #ffffff;
+  border-color: #FFB500;
+  color: #FFB500;
+}
